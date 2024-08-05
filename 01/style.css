@@ -21,6 +21,7 @@
 body {
   font-family: "Inter", sans-serif;
   color: var(--white);
+  background-color: var(--dark-10);
 }
 
 h1, h2 {
@@ -60,6 +61,7 @@ input {
   flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem 0rem 2rem 0rem;
+  height: 100;
 }
 
 .card {
