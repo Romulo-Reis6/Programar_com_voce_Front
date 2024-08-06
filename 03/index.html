@@ -1,46 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
-    <title>CodeLab</title>
-  </head>
-  <body>
-    <div class="header">
-      <h1><span>Code</span>Lab</h1>
-      <input class="input_seach" type="text" placeholder="Pesquisar no blog" />
-    </div>
-    <div class="cards">
-      <div class="card">
-        <div class="card_bar">
-          <span class="card_bar_date">17 de ago, 2024</span>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeLab</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <section class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3 m-4 header p-4">
+      <img src="./images/illustra.png" class="img-fluid order-lg-2" alt="ilustração de uma pessoa segurando um notebook">
+      <div class="d-flex flex-column justify-content-center align-items-center align-items-lg-start order-lg-1 ">
+        <h1 class="text-center text-lg-start">Encontre os <span>melhores artigos</span> de programação em um só lugar</h1>
+        <p class="text-center text-lg-start">Explore o topo da programação em um só lugar! Seu destino único para dicas e tendências atuais</p>
+        <button type="button" class="btn btn-primary btn-md px-5">BUSCAR ARTIGOS</button>
+      </div>
+    </section>
+    <section class="py-4">
+      <h2>Artigos recomendados</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/image-1.png" alt="tela de computador com códigos de programação">
+            <div class="card-body">
+              <h5 class="card-title">O que é linguagem de programação? Conheça as principais</h5>
+              <p class="card-text">Uma das mais populares vertentes da tecnologia da informação, a área de...</p>
+            </div>
+          </div>
         </div>
-        <div class="card_text">
-          <h2>O que é linguagem de programação? Conheça as principais</h2>
-          <p>Uma das mais populares vertentes da tecnologia da informação, a área de programação segue tendo muita demanda de trabalho justamente pela velocidade com que dispositivos tecnológicos vêm avançando.</p>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/image-2.png" alt="tela de computador com códigos de programação">
+            <div class="card-body">
+              <h5 class="card-title">Python: por que a linguagem é tão usada para Data Science e finanças?</h5>
+              <p class="card-text">O mundo da programação conta com algumas opções de linguagem para...</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/image-3.png" alt="tela de computador com códigos de programação">
+            <div class="card-body">
+              <h5 class="card-title">GitHub tem receita de US$ 1 bilhão e 90 milhões de usuários</h5>
+              <p class="card-text">O popular serviço de repositório de código GitHub foi adquirido pela...</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/image-4.png" alt="tela de computador com códigos de programação">
+            <div class="card-body">
+              <h5 class="card-title">15 comandos no GIT que os desenvolvedores precisam saber</h5>
+              <p class="card-text">Dominar os comandos GIT é uma habilidade que se conquista com...</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/image-5.png" alt="tela de computador com códigos de programação">
+            <div class="card-body">
+              <h5 class="card-title">GIT e GitHub: o que são e quais as diferenças entre eles?</h5>
+              <p class="card-text">Git e GibHub são dois softwares de controle de versão essenciais para...</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/image-6.png" alt="tela de computador com códigos de programação">
+            <div class="card-body">
+              <h5 class="card-title">GitHub Copilot ganha integração com GPT-4 e interface conversacional</h5>
+              <p class="card-text">O GitHub Copilot, ferramenta de desenvolvimento baseada em IA...</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card_bar">
-          <span class="card_bar_date">12 de jul, 2024</span>
-        </div>
-        <div class="card_text">
-          <h2>GitHub agora permite fazer login sem precisar de senha</h2>
-          <p>O GitHub anunciou nesta quarta-feira (12) o acesso a partir das passkeys, método de autenticação sem senhas. A novidade está disponível em uma versão beta pública e pode substituir a autenticação em dois fatores.</p>
+    </section>
+    <section class="container mt-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-6 mx-auto">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="input-name" placeholder="Nome">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="input-email" placeholder="Email">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="input-message" rows="6" placeholder="Assunto da mensagem"></textarea>
+            </div>
+            <div class="mb-3">
+              <button type="submit" class="btn btn-primary">Entrar em contato</button>
+            </div>
+          </form>
         </div>
       </div>
-      <div class="card">
-        <div class="card_bar">
-          <span class="card_bar_date">21 de jun, 2024</span>
-        </div>
-        <div class="card_text">
-          <h2>Por que os hiperlinks são azuis em sua maioria?</h2>
-          <p>Quem navega na internet, certamente já percebeu que ela conta com diversos recursos para tornar a nossa vida mais fácil. Entre essas opções podemos mencionar os hiperlinks – uma palavra ou termo clicável que direciona o leitor.</p>
-        </div>
-      </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+    </section>
+</body>
 </html>
