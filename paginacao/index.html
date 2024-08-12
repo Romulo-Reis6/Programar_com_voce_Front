@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+<title>Renderização de HTML via JavaScript</title>
+</head>
+<body>
+  <div class="container" id="posts-container">
+    <label for="elementsNumber">Itens por página</label>
+    <select name="elements-number" id="itens-number">
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+    </select>
+    <label for="page-number">Página: </label>
+    <img src="./images/arrow-left-solid.svg" id="left-arrow" alt="">
+    <input type="text" id="page-number" value="1" readonly>
+    <img src="./images/arrow-right-solid.svg" id="rigth-arrow" alt="">
+    <!-- Aqui serão inseridos os posts -->
+  </div>
+</body>
+</html>

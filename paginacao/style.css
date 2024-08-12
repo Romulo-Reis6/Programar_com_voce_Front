@@ -1,0 +1,24 @@
+/* Estilos simples para exemplo */
+.container {
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin: 20px;
+  }
+  .post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  .body {
+    font-size: 14px;
+    color: #666;
+  }
+
+img {
+    height: 20px;
+}
