@@ -21,16 +21,19 @@ selectPageNumber.addEventListener('change', () => {
 })
 
 leftArrow.addEventListener('click', () => {
-    const pageNumber = document.querySelector('#page-number');
+    const itensNumber = document.querySelector('#itens-number').value;
+    let pageNumber = document.querySelector('#page-number');
     pageNumber.value <= 1 ? pageNumber.value = 1 : pageNumber.value--
-    const currentPageNumber = document.querySelector('#page-number').value;
-    itensNumber = document.querySelector('#itens-number').value;
-    showPosts(currentPageNumber, itensNumber);
+    pageNumber = document.querySelector('#page-number').value;
+    showPosts(pageNumber, itensNumber);
 })
 
 rigthArrow.addEventListener('click', () => {
-    const pageNumber = ++document.querySelector('#page-number').value;
     const itensNumber = document.querySelector('#itens-number').value;
+    const pageMax = JSON.parse(localStorage.getItem('api_data')).length / itensNumber;
+    let pageNumber = document.querySelector('#page-number');
+    pageNumber.value >= pageMax ? pageNumber.value = pageMax : pageNumber.value++
+    pageNumber = document.querySelector('#page-number').value
     showPosts(pageNumber, itensNumber);
 })
     
