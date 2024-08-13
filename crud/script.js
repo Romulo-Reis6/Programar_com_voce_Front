@@ -30,12 +30,7 @@ function renderItems() {
     const editBtn = document.createElement('button');
     editBtn.classList.add('btn');
     editBtn.textContent = 'Editar';
-    editBtn.addEventListener('click', () => {
-        document.querySelector('#form-btn').classList.toggle('hidden');
-        const editBtnForm = document.querySelector('#form-btn-edit');
-        editBtnForm.classList.toggle('hidden');
-        editBtnForm.addEventListener('click', () => editItem(item.id));
-    });
+    editBtn.addEventListener('click', () => editItem(item.id));
 
     itemDiv.appendChild(editBtn);
 
@@ -68,18 +63,19 @@ function editItem(itemId) {
     const name = document.querySelector('#item-name')
     const description = document.querySelector('#item-description');
     
-    const editedItem = {
-        id: itemId,
-        name: name.value,
-        description: description.value
+    if (name.value && description.value) {
+        const editedItem = {
+            id: itemId,
+            name: name.value,
+            description: description.value
+        }
+        items[itemIndex] = editedItem;
+        localStorage.setItem('items', JSON.stringify(items));
+        name.value = '';
+        description.value = ''
+        renderItems();
     }
-    items.splice(itemIndex, 1, editedItem);
-    localStorage.setItem('items', JSON.stringify(items));
-    renderItems();
-    name.value = '';
-    description.value = '';
-    document.querySelector('#form-btn-edit').classList.toggle('hidden');
-    document.querySelector('#form-btn').classList.toggle('hidden');
+    
 }
 
 // Função para remover item
