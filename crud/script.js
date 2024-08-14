@@ -65,8 +65,8 @@ function editItem(itemId) {
     
     if (name.value && description.value) {
         const editedItem = {
-            id: itemId,
-            name: name.value,
+          ...items[itemIndex],
+          name: name.value,
             description: description.value
         }
         items[itemIndex] = editedItem;
