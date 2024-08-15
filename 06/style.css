@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --brand-color: #97edaa;
+
+  --dark-10: #0b0b0b;
+  --dark-20: #101010;
+  --dark-30: #1f1f1f;
+
+  --white: #ffffff;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: 0.1px solid white; */
+}
+
+
+body {
+  font-family: "Archivo", sans-serif;
+  background-color: var(--dark-10);
+}
+
+.green {
+  color: var(--brand-color);
+}
+
+.white {
+  color: var(--white);
+}
+
+
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.font-32 {
+  font-size: 32px;
+}
+
+.font-48 {
+  font-size: 48px;
+}
+
+header, main, .text-footer, .line {
+  width: 60%;
+}
+
+
+footer {
+  background-color: var(--dark-20);
+}
+
+.line {
+  border: 2px solid var(--dark-20);
+}
+
+.globe-phone {
+  max-width: 350px;
+}
+
+.curriculum-btn {
+  background-color: var(--brand-color);
+  border-radius: 4px;
+  max-width: 200px;
+  border: none;
+}
