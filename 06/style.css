@@ -77,3 +77,15 @@ footer {
   max-width: 200px;
   border: none;
 }
+
+.icon-sm {
+  width: 32px;
+}
+
+.circle {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 1px solid var(--dark-30);
+  background-color: var(--dark-20);
+}
