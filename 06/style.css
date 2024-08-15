@@ -58,9 +58,14 @@ header, main, .text-footer, .line {
   width: 60%;
 }
 
+header, main, section {
+  margin-bottom: 60px;
+}
+
 
 footer {
   background-color: var(--dark-20);
+  height: 100px;
 }
 
 .line {
@@ -76,6 +81,7 @@ footer {
   border-radius: 4px;
   max-width: 200px;
   border: none;
+  padding: 5px 0;
 }
 
 .icon-sm {
@@ -88,4 +94,59 @@ footer {
   border-radius: 50%;
   border: 1px solid var(--dark-30);
   background-color: var(--dark-20);
+}
+
+.card {
+  border: none;
+}
+
+.card-body, .card-footer {
+  background-color: var(--dark-10);
+}
+
+.card-img-top {
+  background-color: var(--dark-20);
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+
+.project-btn {
+  background-color: var(--brand-color);
+  width: 210px;
+  border-color: var(--brand-color);
+  border-radius: 4px;
+  padding: 5px 0;
+}
+
+.repository-btn {
+  background-color: var(--dark-20);
+  width: 210px;
+  border-color: var(--brand-color);
+  border-radius: 4px;
+  padding: 5px 0;
+}
+
+.services-card {
+  height: 240px;
+  width: 350px;
+  border: 1px solid;
+  border-color: var(--dark-20);
+  border-bottom-color: var(--brand-color);
+}
+
+.img-md {
+  width: 56px;
+}
+
+.container-hability {
+  width: 180px;
+  height: 150px;
+  background-color: var(--dark-20);
+  border: 1px solid var(--dark-30);
+}
+
+.img-lx {
+  width: 80px;
 }
