@@ -18,12 +18,6 @@
   /* border: 0.1px solid white; */
 }
 
-
-body {
-  font-family: "Archivo", sans-serif;
-  background-color: var(--dark-10);
-}
-
 .green {
   color: var(--brand-color);
 }
@@ -31,8 +25,6 @@ body {
 .white {
   color: var(--white);
 }
-
-
 
 .font-18 {
   font-size: 18px;
@@ -54,6 +46,11 @@ body {
   font-size: 48px;
 }
 
+body {
+  font-family: "Archivo", sans-serif;
+  background-color: var(--dark-10);
+}
+
 header, main, .text-footer, .line {
   width: 60%;
 }
@@ -61,7 +58,6 @@ header, main, .text-footer, .line {
 header, main, section {
   margin-bottom: 60px;
 }
-
 
 footer {
   background-color: var(--dark-20);
@@ -140,13 +136,13 @@ footer {
   width: 56px;
 }
 
+.img-lx {
+  width: 80px;
+}
+
 .container-hability {
   width: 180px;
   height: 150px;
   background-color: var(--dark-20);
   border: 1px solid var(--dark-30);
-}
-
-.img-lx {
-  width: 80px;
 }
