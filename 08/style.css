@@ -24,6 +24,41 @@ header {
     max-height: 600px;
     background-image: url('/images/image-1.png');
     background-size: cover;
-    background-position-y: bottom 20%;
-    background-position-x: center;
+    /* background-repeat: no-repeat; */
+    width: 100vw;
+    /* background-position-y: bottom 20%;
+    background-position-x: center; */
+}
+
+main {
+    background-image: url('./images/bg.png');
+    background-size: contain;
+}
+
+.card {
+    border: 1px solid var(--brand-color);
+}
+
+.pizza-img {
+    width: 125px;
+    height: 125px;
+}
+
+.icon-favorite {
+    width: 32px;
+    height: 32px;
+}
+
+.buy-btn {
+    background-color: var(--brand-color);
+    border-radius: 25px;
+    border: none;
+}
+
+.row > * {
+    padding: 0 !important;
+}
+
+.price {
+    font-size: 2rem;
 }
