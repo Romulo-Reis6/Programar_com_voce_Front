@@ -76,6 +76,8 @@ header {
 
 .footer-container-text {
     max-width: 700px;
+    background: var(--gray);
+    border-radius: 8px;
 }
 
 .footer-img {
@@ -128,4 +130,16 @@ header {
 
 .font-18 {
     font-size: 18px;
+}
+
+.yellow {
+    color: #ffbd48;
+}
+
+.red {
+    color: #ff3536;
+}
+
+.green {
+    color: #60bb28;
 }
